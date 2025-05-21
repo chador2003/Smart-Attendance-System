@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details</title>
+    <link rel="stylesheet" href="static/css/details.css">
+</head>
+<body>
+    <a href="{{ url_for('logout') }}" class="logout">Logout</a>
+    <h1>Employee Details</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Department</th>
+                <th>Total Attendance</th>
+                <th>No of Absent Days</th>
+                <th>Last Attendance Time</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            {% for id, details in employees.items() %}
+                <tr>
+                    <td>{{ id }}</td>
+                    <td>{{ details.name }}</td>
+                    <td>{{ details.email }}</td>
+                    <td>{{ details.department }}</td>
+                    <td>{{ details.total_attendance }}</td>
+                    <td>{{ details.absent_days }}</td>
+                    <td>{{ details.last_attendance_time }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <!-- Download button for CSV -->
+    <form action="{{ url_for('download_csv') }}" method="post">
+        <button type="submit" class="download-btn">Download CSV</button>
+    </form>
+</body>
+</html>
