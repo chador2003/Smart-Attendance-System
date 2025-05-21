@@ -1,0 +1,117 @@
+/* styles.css */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f5;
+    height: 100vh;
+    margin: 0;
+    padding: 0 20px;
+    background: linear-gradient(to right, #f0f2f5, #e2e8f0);
+}
+
+#container {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+#title {
+    position: absolute;
+    top: 20px;
+    text-align: center;
+    width: 100%;
+    font-size: 32px;
+    font-weight: 700;
+    color: #504e4e;
+    background: linear-gradient(to right, #5b5d60, #1e1a1a);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#video-container {
+    position: relative;
+    width: 640px;
+    height: 480px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    background: #000;
+    overflow: hidden;
+}
+
+#video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#info {
+    flex: 1;
+    text-align: left;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    margin: 50px;
+}
+
+#info h2 {
+    margin: 0 0 15px;
+    color: #333;
+    font-size: 24px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#info p {
+    margin: 10px 0;
+    color: #555;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
+}
+
+#info p:hover {
+    background: #f0f0f0;
+}
+
+.label {
+    color: #888;
+    font-weight: 500;
+}
+
+.value {
+    font-weight: 700;
+    color: #333;
+}
+
+.login-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4facfe;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.login-button:hover {
+    background-color: #1e1a1a;
+}
