@@ -1,0 +1,63 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f0f2f5;
+    margin: 0;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background: #4a3c3c;
+    color: #fff;
+}
+
+table tr:hover {
+    background: #f0f0f0;
+}
+
+.logout {
+    background: #1e1a1a;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logout:hover {
+    background: #4facfe;
+}
+
+ .download-btn {
+            background-color: #4CAF50; /* Green background */
+            border: none; /* Remove borders */
+            color: white; /* White text */
+            padding: 10px 20px; /* Some padding */
+            text-align: center; /* Centered text */
+            text-decoration: none; /* Remove underline */
+            display: inline-block; /* Get the elements to line up nicely */
+            font-size: 16px; /* Increase font size */
+            margin: 10px 2px; /* Add some margin */
+            cursor: pointer; /* Pointer/hand icon */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .download-btn:hover {
+            background-color: #45a049; /* Darker green on hover */
+        }
