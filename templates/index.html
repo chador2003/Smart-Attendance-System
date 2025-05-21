@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Attendance System</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="static/css/styles.css"> <!-- Assuming you have a styles.css file for custom styles -->
+</head>
+
+<body>
+    <div id="title">Smart Attendance System</div>
+    <div id="container">
+        <div id="video-container">
+            <img id="video" src="{{ url_for('video_feed') }}" alt="Video Feed">
+        </div>
+        <div id="info">
+            <h2>Employee Information</h2>
+            <p id="name"><span class="label">Name:</span> <span class="value"></span></p>
+            <p id="department"><span class="label">Department:</span> <span class="value"></span></p>
+            <p id="total_attendance"><span class="label">Total Attendance:</span> <span class="value"></span></p>
+            <p id="absent_days"><span class="label">Number of Days Absent:</span> <span class="value"></span></p>
+            <p id="status"><span class="label">Status:</span> <span class="value"></span></p>
+            <a href="{{ url_for('login') }}" class="login-button">Login</a>
+        </div>
+    </div>
+ <script src="static/js/index.js"></script>
+</body>
+</html>
